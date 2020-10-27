@@ -1,1 +1,1 @@
-# Django-blog-app
+# Django Blog App
