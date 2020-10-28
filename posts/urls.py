@@ -10,7 +10,7 @@ urlpatterns = [
     path('', PostList.as_view()),
     path('<int:pk>/', PostDetail.as_view()),
 
-    #  path to dynamic OpenAPI schema (used in redoc path)
+    # path to dynamic OpenAPI schema (used in redoc path)
     path('openapi/', get_schema_view(
         title="My Blog",
         description="Small blog project",
