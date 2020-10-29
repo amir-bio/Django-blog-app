@@ -1,7 +1,7 @@
 from django.urls import path
 from rest_framework.routers import SimpleRouter
 
-from .views import PostList, PostDetail, UserViewSet
+from .views import PostDetail, PostList, UserViewSet
 
 router = SimpleRouter()
 router.register('users', UserViewSet, basename='users')
