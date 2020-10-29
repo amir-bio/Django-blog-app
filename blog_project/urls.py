@@ -25,7 +25,7 @@ urlpatterns = [
     path('api/v1/dj-rest-auth/', include('dj_rest_auth.urls')),
     path('api/v1/dj-rest-auth/registration/',
          include('dj_rest_auth.registration.urls')),
-        # path to dynamic OpenAPI schema (used in redoc path)
+    # path to dynamic OpenAPI schema (used in redoc path)
     path('api/v1/openapi/', get_schema_view(
         title="My Blog",
         description="Small blog project",

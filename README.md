@@ -58,7 +58,7 @@ TODOs:
  - [x] API Documentation ideally redoc
  - [x] Custom Permission checks
  - [x] [done for now but not using djoser lib] Custom authentication (ideally google auth) - look into djoser lib and maybe authentication with custom pw with signup via welcome email
- - [ ] Add Github Actions
+ - [x] Add Github Actions
  - [ ] Play around with several different python toolings for linting, auditing, depency checks
  - [ ] setup depend bot on github
  - [ ] Find a platform to deploy this to - mainly looking to do it with terrafrom
