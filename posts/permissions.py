@@ -6,6 +6,6 @@ class IsAuthorOrReadOnly(permissions.BasePermission):
         #  read-only permissions granted for any request
         # write permissions are only granted if the caller is the author
         return bool(
-            request.method in permissions.SAFE_METHODS or
-            obj.author == request.user
+            request.method in permissions.SAFE_METHODS
+            or obj.author == request.user
         )

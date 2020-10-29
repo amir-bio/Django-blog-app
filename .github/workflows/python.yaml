@@ -30,4 +30,4 @@ jobs:
         pipenv run flake8 .
     - name: Unit tests
       run: |
-        pipenv run python manage.py tests
+        pipenv run python manage.py test
