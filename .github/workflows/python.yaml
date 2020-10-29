@@ -28,6 +28,9 @@ jobs:
       run: |
         # will automatically pickup config in tox.ini
         pipenv run flake8 .
+    - name: Check import ordering
+      run: |
+        pipenv run isort . -c
     - name: Unit tests
       run: |
         pipenv run python manage.py test
