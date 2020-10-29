@@ -42,10 +42,22 @@ Screenshot of the Redoc API doc:
     exception could be returned to match any custom status code for permission
     errors.)
 
+- Token based authentication with registration: Using [dj-rest-auth](https://dj-rest-auth.readthedocs.io/)
+  to provide token based authentication for the API and registration via an
+  email based approach (uses django-allauth internally)
+
+## Registration
+
+You can register via http://127.0.0.1:8000/api/v1/dj-rest-auth/registration/
+The emails are setup to be outputted to the console and no real emails are sent.
+The verification of the email is not enforced before the users can authenticate.
+
+
+
 TODOs:
  - [x] API Documentation ideally redoc
  - [x] Custom Permission checks
- - [ ] Custom authentication (ideally google auth) - look into djoser lib and maybe authentication with custom pw with signup via welcome email
+ - [x] [done for now but not using djoser lib] Custom authentication (ideally google auth) - look into djoser lib and maybe authentication with custom pw with signup via welcome email
  - [ ] Add Github Actions
  - [ ] Play around with several different python toolings for linting, auditing, depency checks
  - [ ] setup depend bot on github
